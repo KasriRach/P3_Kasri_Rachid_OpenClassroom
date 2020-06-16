@@ -1,0 +1,259 @@
+/* --------------------- Style Général -------------------------- */
+
+body {
+  font-family: "arial", sans-serif;
+}
+h1 {
+  color: #000000;
+  text-align: center;
+  top: 100px;
+}
+p {
+  font-size: 1em;
+}
+.BeFree {
+  text-align: center;
+
+}
+.BeFree1{
+    display: none;
+}
+/* ------------------------- Slider ----------------------------- */
+
+/* Slider */
+#container-slider {
+  background-image: url("seance-couple-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slider {
+  position: relative;
+  z-index: 100;
+  top: 40px;
+  margin: auto;
+  text-align: center; /*centre mes boutons*/
+}
+#slider img {
+  width: 359px;
+  height: 349px;
+  border-radius: 15px;
+  border: 5px solid black;
+}
+
+/*bouton*/
+button {
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+/* Flèches du slider */
+.fa-angle-right,
+.fa-angle-left,
+.fa-play,
+.fa-pause-circle {
+  cursor: pointer;
+}
+
+/* ----------------------Bandeau avec flèche ----------------------------- */
+/* bandeau */
+.bandeau {
+  max-width: 100%;
+  height: 80px;
+  background-color: #4d4c4c;
+}
+
+.bandeau i {
+  color: #fff;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  animation: arrow 6s infinite;
+}
+
+/* ------------------- Carte de location ----------------------------- */
+/* Carte */
+#maCarte {
+  height: 500px;
+  width: 55%;
+  text-align: center; /*centre mes boutons*/
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Informations concernant les stations */
+.infos {
+  width: 35%;
+  height: auto;
+  padding: 5%;
+  background-color: #ffffff;
+  color: #e3eef7;
+}
+#info {
+  margin-top: -20px;
+}
+
+#information-velo {
+  font-size: 0.8em;
+  padding-top: 5px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px;
+  position: relative;
+  color: #f6fafcfb;
+  background-color: #dfd9d9;
+}
+
+.titre-resa {
+  font-size: 1.5em;
+  text-align: center;
+  color: #0d0d0e;
+  font-weight: bold;
+}
+
+.clic-marker {
+  text-align: center;
+  color: #000000;
+  color: #1e90ff;
+}
+
+#case-info {
+  text-align: center;
+  color: #0d0d0e;
+}
+
+#reserver {
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(150, 148, 148);
+  border: 1px solid white;
+  width: 90px;
+  margin: auto;
+  cursor: pointer;
+  color: #e3eef7;
+}
+#nettoyer,
+#valid,
+#annuler {
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(150, 148, 148);
+  border: 1px solid white;
+  color: #e3eef7;
+  margin: auto;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  padding: 3px;
+  border: 3px solid whitesmoke;
+  border-radius: 5px;
+  width: 120px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  width: 70px;
+  margin-left: 5px;
+
+  cursor: pointer;
+}
+
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: inline-block;
+  width: 55px;
+  text-align: right;
+}
+
+#signer {
+  display: none;
+}
+#container-canvas {
+  margin: auto;
+}
+#canvas {
+  border: 1px solid #4d4c4c;
+  background-color: #e3eef7;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: none;
+}
+/* ----------------------- Réservation ----------------------------- */
+#canvasbtn {
+  display: none;
+}
+#annuler {
+  display: none;
+  float: left;
+}
+
+#mess-info {
+  /*margin: ;*/
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+#resannulee {
+  display: none;
+  background-color: #4d4c4c;
+  border: 1px solid white;
+  color: #e3eef7;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* ---------------------- Pied de page ----------------------------- */
+footer {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #4d4c4c;
+  text-align: center;
+
+  color: #fff;
+}
+.info-footer {
+  padding-top: 31px;
+  text-align: center;
+}
+
+/* ---------------------- Responsive Design ------------------------- */
+
+@media screen and (max-width: 768px) {
+.BeFree {
+        display: none;
+      }
+.BeFree1{
+    color: white;
+    display: block;
+}
+  #slider img {
+    width: 60%;
+    height: auto;
+  }
+  .box {
+    flex-direction: column;
+  }
+  #maCarte {
+    width: 100%;
+    height: 400px;
+  }
+  .infos {
+    width: 100%;
+    height: auto;
+    padding: 0%;
+  }
+  #information-velo {
+    margin: 5px;
+    top: 10%;
+  }
+}
